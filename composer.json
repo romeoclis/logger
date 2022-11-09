@@ -1,0 +1,21 @@
+{
+    "name": "robert-lerning/logger-learning",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Robert\\Logger\\": "src/Logger"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert Igumnov"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^8.0",
+        "ext-pdo": "*",
+        "psr/log" : "^1.1.4"
+    }
+}
