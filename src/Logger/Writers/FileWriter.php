@@ -16,7 +16,7 @@ class FileWriter implements WriterInterface
 
     private function logFile()
     {
-        return 'logs/' .date('Y-m-d'). '.json';
+        return 'logs/' . date('Y-m-d') . '.json';
     }
 
     public function write($level, $message, $context)
@@ -26,5 +26,4 @@ class FileWriter implements WriterInterface
             $this->formatter->format($level, $message, $context)
         );
     }
-
 }
